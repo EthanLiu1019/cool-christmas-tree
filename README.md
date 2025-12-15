@@ -16,4 +16,4 @@
 1. 在 GitHub 创建仓库 'cool-christmas-tree'
 2. 上传所有文件（'index.html', 'style.css', 'script.js', 'README.md'）
 3. 打开仓库 → Settings → Pages → 选择 'main' 分支 → 保存
-4. 几分钟后访问：
+4. 几分钟后访问：https://你的用户名.github.io/cool-christmas-tree
