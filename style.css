@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background: radial-gradient(#001, #000);
+  overflow: hidden;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+.star {
+  font-size: 40px;
+  color: gold;
+  animation: glow 1s infinite alternate;
+  margin-top: 30px;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px gold; }
+  to { text-shadow: 0 0 20px yellow; }
+}
+
+.tree-layer {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  margin: auto;
+  position: relative;
+}
+
+.layer1 { border-bottom: 100px solid #0a0; margin-top: 20px; }
+.layer2 { border-bottom: 120px solid #0b0; margin-top: -40px; }
+.layer3 { border-bottom: 140px solid #0c0; margin-top: -40px; }
+
+.tree-trunk {
+  width: 60px;
+  height: 80px;
+  background: #663300;
+  margin: auto;
+  margin-top: -20px;
+}
+
+.decoration {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: white;
+  font-size: 14px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to { transform: translateY(100vh); }
+}
